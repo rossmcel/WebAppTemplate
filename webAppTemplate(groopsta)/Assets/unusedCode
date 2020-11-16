@@ -1,0 +1,28 @@
+ echo <<<_LIBINPUT
+          <div class="topicFormContain">
+          <h2>Add a Topic</h2>
+          <form method='post' action='topics.php?view=$all'>
+            <input class="topicText" type='text' name='addTopic' placeholder="Enter a Topic"><br>
+            <label>Body region</label>
+            <select name="bodyRegion">
+              <option value="head">Head</option>
+              <option value="neck">Neck</option>
+              <option value="rightShoulder">Right Shoulder</option>
+              <option value="leftShoulder">Left Shoulder</option>
+              <option value="chest">Chest</option>
+              <option value="stomach">Stomach</option>
+              <option value="rightHand">Right Hand</option>
+              <option value="leftHand">Left Hand</option>
+              <option value="rightKnee">Right Knee</option>
+              <option value="leftKnee">Left Knee</option>
+              <option value="rightFoot">RightFoot</option>
+              <option value="leftFoot">Left Foot</option>
+              <option value="leftLowerBack">Left Lower Back</option>
+              <option value="rightLowerBack">Right Lower Back</option>
+              <option value="upperBack">Upper Back</option>
+            </select>
+            <input class="createTopicBtn" type="submit" value="Create">
+            <h3>$error</h3>
+          </form>
+          </div>
+          _LIBINPUT;

@@ -1,0 +1,310 @@
+/* Topics and Methods Styles */
+
+.topicsContainer {
+  position: absolute;
+  margin-top: 5vh;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.topicsContainer h1 {
+  text-align: center;
+  margin-top: 4vh;
+  font-size: 2em;
+}
+
+.topicsContainer h2 {
+  text-align: center;
+  color: #a3cdff;
+  margin-top: 5vh;
+}
+
+
+
+.topicN {
+  width: 70%; /* if you change this you have to change the topicFormContain width to the same in order to keep the two containers the same width*/
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  background-color: white; /*#f7f4eb;*/
+  color: black;
+  overflow-y: scroll;
+  border: 0px;
+}
+
+.topicN::-webkit-scrollbar {
+  width: 0.2em;
+}
+ 
+.topicN::-webkit-scrollbar-track {
+  /*box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);*/
+}
+ 
+.topicN::-webkit-scrollbar-thumb {
+  background-color: lightgrey;
+  outline: 1px solid slategrey;
+}
+
+.topicN ul {
+  padding-left: 0px;
+  margin-top: 0px;
+  height: 100%;
+  border: 0px;
+}
+
+.topicN li {
+  list-style-type: none;
+  width: 100%;
+  height: 8%;
+  padding-top: 1.2%;
+  padding: auto;
+  text-align: center;
+  font-size: 1.5em;
+  /*border-bottom: 0.5px #a3cdff solid;*/
+  border: 0px;
+}
+
+.topicN a {
+  color: black;
+  font-weight: bold;
+}
+.topicN i {
+  float: right;
+  color: grey;
+}
+
+.upDownVote {
+  float: left;
+}
+
+.upDownVote:hover {
+  transition: 0.2s ease;
+}
+
+#up {
+  color: grey;
+}
+
+#down {
+  color: grey;
+}
+
+#down:hover { /* Down is actually up */
+  color: green;
+}
+
+#up:hover {
+  color: blue;
+}
+
+
+
+
+
+
+
+
+.topicFormContain {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Necessary - Used on the methods page */
+.topicFormContain h3 {
+  margin-bottom: 0.2vh;
+}
+
+
+.topicText {
+  width: 35%;
+  height: 3vh;
+  padding-left: 0.6vw;
+  color: black;
+  font-size: 1em;
+  /* Thick blue outline on text input */
+  border: 2px #a3cdff solid;
+  border-radius: 2vw;
+  /* Incorporate input button into text input box */
+  padding-right: 10%;
+  margin-bottom: 1vh;
+}
+
+.topicFormContain textarea {
+  width: 100%;
+  min-height: 3vh;
+  font-family: inherit;
+  font-size: 1em;
+  padding-left: 0.6vw;
+  border: 1.5px #a3cdff solid;
+  border-radius: 1vw;
+}
+
+.createTopicBtn {
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border: 0px;
+}
+
+/* Button for topics page, not methods page - different from createTopicBtn */
+.createTopicBtnTopic {
+  width: 10%;
+  margin-left: -12.5%;
+  text-align: right;
+  padding: 0px;
+  padding-top: 0.5vh;
+  border: 0px;
+  background-color: white;
+  color: grey;
+}
+
+.topicFormContain i {
+  font-size: 24px;
+}
+
+
+.createTopicBtn:hover {
+  background-color: #a3cdff;
+  color: white;
+}
+
+.topicResultLink {
+  color: blue;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.methodForm {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.methodForm h3 {
+  margin-bottom: 0.5vh;
+}
+
+
+.methodText {
+  width: 25%;
+  border: 1px lightgrey solid;
+  height: 3vh;
+  padding-left: 0.2vw;
+  color: black;
+  font-size: 1em;
+}
+
+.methodForm textarea {
+  width: 100%;
+  border: 0.5px lightgrey solid;
+  min-height: 3vh;
+  font-family: inherit;
+  font-size: 1em;
+  padding-left: 0.2vw;
+}
+
+.addMethodBtn {
+  border: 1px lightgrey solid;
+  border-radius: 0.2vw;
+  font-size: 1em;
+  font-weight: bold;
+  color: grey;
+  padding: 0.4vw 0.4vh;
+}
+
+.addMethodBtn:hover {
+  background-color: #a3cdff;
+}
+
+
+
+
+
+
+
+
+
+.collapsible {
+  /*border: 1px lightgrey solid;*/
+  background-color: white;/*#f5feff;*/
+  color: black;
+  cursor: pointer;
+  padding: 0.9vw;
+  width: 100%;
+  text-align: center;
+  /*outline: none;*/
+  font-size: 1.3em;
+  font-weight: bold;
+  border-top: 0.5px #a3cdff solid;
+  border-left: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+}
+
+.active, .collapsible:hover {
+  background-color: lightgrey;
+  transition: 0.2s ease;
+}
+
+
+
+
+.methodContent {
+  /**/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  /**/
+  padding-left: 2vw;
+  background-color: #f1f1f1;
+}
+
+.methodContent h4 {
+  margin-bottom: 0.1vh;
+  font-size: 1.1em;
+}
+
+.methodContent ul {
+  margin-top: 0.1vh;
+}
+
+.methodContent li {
+  font-size: 1em;
+  text-align: left;
+}
+
+
+
+
+.methodIndiContent {
+  margin-bottom: 3vh;
+}
+
+.methodIndiContent h4 {
+  margin-bottom: 0.2vh;
+}
+
+.methodIndiContent h5 {
+  margin-bottom: 0.2vh;
+  font-weight: bold;
+}
+
+.methodIndiContent p {
+  margin-top: 0.2vh;
+}
+
+
+
+
+
+

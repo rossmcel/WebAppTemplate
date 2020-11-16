@@ -1,0 +1,74 @@
+
+/* Login */
+.logInForm {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+  margin-top: 10vh;
+  border: 2px black solid;
+  border-radius: 2vw;
+  position: absolute;
+  margin-left: 25vw;
+  margin-right: auto;
+  text-align: center;
+}
+
+.error {
+  margin-top: 5vh;
+  color: red;
+}
+
+.logInForm span {
+  position: relative;
+}
+
+.logInForm h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.logInForm label {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.logInForm input {
+  height: 5vh;
+  margin: 2vh;
+  border: 1px grey solid;
+  border-radius: 0.2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.loginBtn {
+  width: 15vw;
+  height: 7vh;
+  border-radius: 2vw;
+  margin-top: 5vh;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.loginBtn:hover {
+  color: white;
+  text-decoration: none;
+  background-color: darkgrey;
+}
+
+
+
+
+.goContainer {
+  margin-top: 60vh;
+  text-align: center;
+  margin-left: 30vw;
+  margin-right: auto;
+  width: 40vw;
+  position: absolute;
+}
+
+.goContainer h3 {
+  font-size: 1.5em;
+}

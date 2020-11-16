@@ -1,0 +1,26 @@
+/* Footer CSS File */
+
+footer {
+	margin-top: 10vh;
+	padding-top: 2vh;
+	height: 10vh;
+	width: 100vw;
+	background-color: #333;
+	text-align: center;
+	color: white;
+}
+
+footer h3 {
+	color: white;
+	font-family: inherit;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+footer p {
+	color: white;
+	font-family: inherit;
+	font-size: 1em;
+	text-align: center;
+	font-weight: bold;
+}

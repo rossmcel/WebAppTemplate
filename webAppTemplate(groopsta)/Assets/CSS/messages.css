@@ -1,0 +1,323 @@
+/* Messages */
+.messagesContain {
+  position: absolute;
+  margin-top: 10vh;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: auto;
+  font-size: 1.5em;
+}
+
+.messagesContain h3 {
+  font-size: 2em;
+  text-align: center;
+}
+
+
+
+/*
+.messagesForm { 
+  margin-top: 10vh;
+  text-align: left;
+  text-align: center;
+}
+
+.messagesForm legend {
+  font-weight: bold;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+#publicStyle {
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  height: 8vh;
+  width: 8vw;
+  padding: 0.3vw;
+  border-radius: 0.2vw;
+}
+
+#privateStyle {
+  border: 2px solid #444;
+  height: 8vh;
+  width: 8vw;
+  padding: 0.3vw;
+  border-radius: 0.2vw;
+}
+
+
+.messagesContain textarea {
+  margin-top: 5vh;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: auto;
+  height: 10vh;
+  border-radius: 0.3vw;
+  font-size: 1em;
+}
+
+.postMessageBtn {
+  width: 12vw;
+  height: 6vh;
+  font-size: 1em;
+  background-color: #cacadb;
+  border-radius: 0.7vw;
+}
+
+
+
+.postedMessagesContain {
+  margin-top: 5vh;
+  padding: 1vw;
+  text-align: justify;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px grey solid;
+}
+
+.postedMessagesContain a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.eraseBtn {
+  width: 20vw;
+  height: 10vh;
+  padding: 0.8vw;
+  border-radius: 0.3vw;
+  margin-left: 17vw;
+  margin-right: auto;
+  background-color: blue;
+  color: white !important;
+}
+
+
+*/
+
+
+.messageContainBox {
+  width: 100%;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+}
+
+.sectionName {
+  height: 9.5%;
+  width: 100%;
+  border-top: 1px lightgrey solid;
+  border-bottom: 1px lightgrey solid;
+}
+
+.sectionName p {
+  margin-top: 2vh;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+.recent {
+  display: inline-block;
+  width: 24%;
+  height: 94.5%;
+  float: left;
+  background-color: #f2f5f7;
+  overflow-y: scroll;
+}
+
+.messageMain {
+  display: inline-block;
+  width: 52%;
+  height: 90%;
+  float: center;
+}
+
+.contacts {
+  display: inline-block;
+  width: 24%;
+  height: 94.5%;
+  float: right;
+  background-color: #f2f5f7;
+  overflow-y: scroll;
+}
+
+
+
+
+.recent a {
+  color: black;
+}
+
+
+/* messageMain */
+.content {
+  height: 79.5%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-bottom: 0.5px lightgrey solid;
+  border-left: 0.5px lightgrey solid;
+  border-left: 0.5px lightgrey solid;
+  overflow-y: scroll;
+ }
+ 
+ .content::-webkit-scrollbar {
+   width: 0.5em;
+ }
+ 
+ .content::-webkit-scrollbar-track {
+
+}
+ 
+ .content::-webkit-scrollbar-thumb {
+   background-color: darkgrey;
+   outline: 1px solid slategrey;
+    border-radius: 0.8vw;
+}
+ 
+ .message {
+   border-radius: 1.4vw;
+   padding: 0.5vh;
+   max-width: 40%;
+ }
+ 
+ 
+ .Me {
+   float:right;
+   margin-right: 2vw;
+   background-color: lightgrey;
+ }
+ 
+ .Else {
+   float: left;
+   margin-left: 2vw;
+   background-color: lightgrey;
+ }
+ 
+ .message p {
+   margin: 0.8vh;
+   font-size: 0.8em;
+ }
+ 
+ 
+
+ .type {
+  height: 10%;  
+  border-bottom: 0.5px lightgrey solid;
+ }
+ 
+ .postMessageText {
+  display: inline-block;
+   width: 84%;
+   margin-left: 2.5%;
+   margin-right: auto;
+   margin-top: 1vh;
+   border-radius: 0.7vw;
+   border: 0.7px solid lightgrey;
+   padding-left: 1vw;
+   padding-top: 1vh;
+   padding-bottom: 1vh;
+   padding-right: 6vh;
+   position: relative;
+   z-index: 1;
+ }
+
+ .postMessageBtn {
+  display: inline-block;
+  width: 8.5%;
+  text-align: center;
+  padding-top: 0.8vh;
+  padding-bottom: 0.8vh;
+  margin-top: 1vh;
+  margin-left: -7.4vh;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  border: 0px;
+}
+
+.postMessageBtn:hover {
+  background-color: #a3cdff;
+  color: white;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Recent */
+ .user {
+   width: 90%;
+   padding-top: 1vh;
+   padding-bottom: 1vh;
+   padding-left: 2vh;
+   border-bottom: lightgrey;
+   margin-bottom: 0.5vh;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 0.9em;
+   font-weight: bold;
+   /*text-align: center;*/
+   background-color: white;
+ }
+ 
+ .user p {
+   margin: 0px;
+   display: inline-block;
+   margin-left: 1vw;
+   text-align: left;
+ }
+
+ .user a {
+  color: black;
+ }
+ 
+ .recent::-webkit-scrollbar {
+   width: 1%;
+ }
+ 
+ .recent::-webkit-scrollbar-track {
+  
+}
+ 
+ .recent::-webkit-scrollbar-thumb {
+   background-color: darkgrey;
+   outline: 1px solid slategrey;
+    border-radius: 0.8vw;
+}
+
+
+
+
+
+/*Contacts*/
+.contacts::-webkit-scrollbar {
+   width: 1%;
+ }
+ 
+ .contacts::-webkit-scrollbar-track {
+}
+ 
+ .contacts::-webkit-scrollbar-thumb {
+   background-color: darkgrey;
+   outline: 1px solid slategrey;
+    border-radius: 0.8vw;
+}
+
+.contacts a {
+  color: black;
+}
+
+.contactImg {
+  display: inline-block;
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
+  margin-right: 1vw;
+  margin-top: 0px;
+}

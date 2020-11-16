@@ -1,0 +1,786 @@
+<div class="contain">
+  
+  
+  
+  <div class="recent">
+  
+    <div class="sectionName">
+    <p>
+      Recent
+    </p>
+    </div>
+    
+    
+    <div class="user">
+      <p>
+        User
+      </p>
+    </div>
+    
+     <div class="user">
+      <p>
+        User
+      </p>
+    </div>
+    
+  </div>
+  
+  <div class="messageMain">
+  
+    <div class="sectionName">
+      <p>
+        User
+      </p>
+    </div>
+  
+    <div class="content">
+      <div class="message Me">
+        <p>My Message</p>
+      </div>
+      <br>
+      <br>
+      <div class="message Else">
+        <p>Your Message</p>
+      </div>
+      <br>
+      <br>
+      <div class="message Me">
+        <p>My Message</p>
+      </div>
+      <br>
+      <br>
+      <div class="message Me">
+        <p>My Message</p>
+      </div>
+      <br>
+      <br>
+        <div class="message Else">
+        <p>Your Message</p>
+      </div>
+      <br>
+      <br>
+      <div class="message Else">
+        <p>Your Message</p>
+      </div>
+      <br>
+      <br>
+      <div class="message Me">
+        <p>My Message</p>
+      </div>
+      <br>
+      <br>
+      <div class="message Me">
+        <p>My Message</p>
+      </div>
+      <br>
+      <br>
+      <div class="message Me">
+        <p>My Message</p>
+      </div>
+      <br>
+      <br><div class="message Me">
+        <p>My Message</p>
+      </div>
+      <br>
+      <br>
+      <div class="message Me">
+        <p>Testing the longer version of messages. I want to see if the max-witdh
+        will apply.</p>
+      </div>
+      
+      
+    </div>
+    <div class="type">
+      <input type="text" placeholder="Enter a message">
+    </div>
+  </div>
+  <div class="contacts">
+  
+  <div class="sectionName">
+    <p>
+      Contacts
+    </p>
+  </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contain {
+  width: 90vw;
+  height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+}
+
+.sectionName {
+  height: 9.5%;
+  width: 100%;
+  border-top: 1px lightgrey solid;
+  border-bottom: 1px lightgrey solid;
+}
+
+.sectionName p {
+  margin-top: 1vh;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+.recent {
+  display: inline-block;
+  width: 19%;
+  height: 94.75%;
+  float: left;
+  background-color: #f2f5f7;
+  overflow-y: scroll;
+}
+
+.messageMain {
+  display: inline-block;
+  width: 62%;
+  height: 90%;
+  float: center;
+}
+
+.contacts {
+  display: inline-block;
+  width: 19%;
+  height: 94.75%;
+  float: right;
+  background-color: #f2f5f7;
+}
+
+
+
+
+/* messageMain */
+.content {
+  height: 79.5%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-bottom: 0.5px lightgrey solid;
+  border-left: 0.5px lightgrey solid;
+  border-left: 0.5px lightgrey solid;
+  overflow-y: scroll;
+ }
+ 
+ .content::-webkit-scrollbar {
+   width: 0.5em;
+ }
+ 
+ .content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+ .content::-webkit-scrollbar-thumb {
+   background-color: darkgrey;
+   outline: 1px solid slategrey;
+    border-radius: 0.8vw;
+}
+ 
+ .message {
+   border-radius: 2vw;
+   padding: 1vh;
+   max-width: 40%;
+ }
+ 
+ 
+ .Me {
+   float:right;
+   margin-right: 2vw;
+   background-color: lightgrey;
+ }
+ 
+ .Else {
+   float: left;
+   margin-left: 2vw;
+   background-color: lightgrey;
+ }
+ 
+ .message p {
+   margin: 0.8vh;
+   font-size: 1em;
+ }
+ 
+ 
+
+ .type {
+  height: 9.5%;  
+  border-bottom: 0.5px lightgrey solid;
+ }
+ 
+ .type input {
+   width: 94%;
+   margin-left: 2.5%;
+   margin-right: auto;
+   margin-top: 1vh;
+   border-radius: 0.7vw;
+   border: 0.7px solid lightgrey;
+   padding-left: 1vw;
+   padding-top: 0.5vh;
+   padding-bottom: 0.5vh;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Recent */
+ .user {
+   width: 94%;
+   padding-top: 2vh;
+   padding-bottom: 2vh;
+   padding-left: 2vh;
+   border-bottom: lightgrey;
+   margin-bottom: 1vh;
+   background-color: white;
+ }
+ 
+ .user p {
+   margin: 0px;
+ }
+ 
+ .recent::-webkit-scrollbar {
+   width: 5%;
+ }
+ 
+ .recent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+ .recent::-webkit-scrollbar-thumb {
+   background-color: darkgrey;
+   outline: 1px solid slategrey;
+    border-radius: 0.8vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php // Example 26-11: messages.php
+  require_once 'header.php';
+  
+  if (!$loggedin) die("</div></body></html>");
+
+  if (isset($_GET['view'])) $view = sanitizeString($_GET['view']);
+  else                      $view = $user;
+
+  if (isset($_POST['text']))
+  {
+    $text = sanitizeString($_POST['text']);
+
+    if ($text != "")
+    {
+      $pm   = substr(sanitizeString($_POST['pm']),0,1);
+      $time = time();
+      queryMysql("INSERT INTO messages VALUES(NULL, '$user',
+        '$view', '$pm', $time, '$text')");
+    }
+  }
+
+  if ($view != "")
+  {
+    if ($view == $user) $name1 = $name2 = "Your";
+    else
+    {
+      $name1 = "<a href='members.php?view=$view'>$view</a>'s";
+      $name2 = "$view's";
+    }
+
+    echo "<div class='messagesContain'><!-- <h3>$name1 Messages</h3> -->";
+
+
+    echo <<<_MESSAGES
+        <div class="messageContainBox">
+          <div class="recent">
+            <div class="sectionName">
+              <p>
+                Recent
+              </p>
+            </div> <!-- End sectionName -->
+    _MESSAGES;
+
+    echo <<<_MESSAGES
+            <div class="user">
+              <p>User</p>
+            </div>          
+            <div class="user">
+              <p>User</p>
+            </div>            
+          </div> <!-- End recent -->          
+          <div class="messageMain">          
+            <div class="sectionName">
+              <p>$contact</p>
+            </div> <!-- End sectionName -->          
+            <div class="content">
+              <div class="message Me">
+                <p>My Message</p>
+              </div>
+              <br>
+              <br>
+              <div class="message Else">
+                <p>Your Message</p>
+              </div>
+              <br>
+              <br>
+              <div class="message Me">
+                <p>My Message</p>
+              </div>
+              <br>
+              <br>
+              <div class="message Me">
+                <p>My Message</p>
+              </div>
+              <br>
+              <br>
+                <div class="message Else">
+                <p>Your Message</p>
+              </div>
+              <br>
+              <br>
+              <div class="message Else">
+                <p>Your Message</p>
+              </div>
+              <br>
+              <br>
+              <div class="message Me">
+                <p>My Message</p>
+              </div>
+              <br>
+              <br>
+              <div class="message Me">
+                <p>My Message</p>
+              </div>
+              <br>
+              <br>
+              <div class="message Me">
+                <p>My Message</p>
+              </div>
+              <br>
+              <br>
+              <div class="message Me">
+                <p>My Message</p>
+              </div>
+              <br>
+              <br>
+              <div class="message Me">
+                <p>Testing the longer version of messages. I want to see if the max-witdh
+                will apply.</p>
+              </div>              
+            </div> <!-- End content -->
+            <div class="type">
+              <form>
+                <input class="postMessageText" type="text" name='text' placeholder="Enter a message">
+                <input class="postMessageBtn" type='submit' value='Send'>
+              </form>
+            </div><!-- End type -->
+          </div> <!-- End messageMain -->
+          <div class="contacts">          
+            <div class="sectionName">
+              <p>
+                Contacts
+              </p>
+            </div>            
+          </div> <!-- End contacts -->
+        </div> <!-- End messageContainBox -->
+    _MESSAGES;
+
+    /*
+    echo <<<_END
+      <div class='messagesForm'>
+      <form method='post' action='messages.php?view=$view'>
+          <input type='radio' name='pm' id='private' value='1'>
+          <label id="privateStyle" for="private">Private</label><br>
+
+          <textarea name='text'></textarea><br>
+          <input class="postMessageBtn" data-transition='slide' type='submit' value='Post Message'>
+        </fieldset>
+    </form><br>
+    </div>
+_END;
+*/
+
+    echo "<div class='postedMessagesContain'>";
+    date_default_timezone_set('UTC');
+
+    if (isset($_GET['erase']))
+    {
+      $erase = sanitizeString($_GET['erase']);
+      queryMysql("DELETE FROM messages WHERE id=$erase AND recip='$user'");
+    }
+    
+    $query  = "SELECT * FROM messages WHERE recip='$view' ORDER BY time DESC";
+    $result = queryMysql($query);
+    $num    = $result->num_rows;
+    
+    for ($j = 0 ; $j < $num ; ++$j)
+    {
+      $row = $result->fetch_array(MYSQLI_ASSOC);
+
+      if ($row['pm'] == 0 || $row['auth'] == $user || $row['recip'] == $user)
+      {
+        echo date('M jS \'y g:ia:', $row['time']);
+        echo " <a href='messages.php?view=" . $row['auth'] .
+             "'>" . $row['auth']. "</a> ";
+
+        if ($row['pm'] == 0)
+          echo "wrote: &quot;" . $row['message'] . "&quot; ";
+        else
+          echo "whispered: <span class='whisper'>&quot;" .
+            $row['message']. "&quot;</span> ";
+
+        if ($row['recip'] == $user)
+          echo "[<a href='messages.php?view=$view" .
+               "&erase=" . $row['id'] . "'>erase</a>]";
+
+        echo "<br><br>";
+      }
+    }
+  }
+
+  if (!$num)
+    echo "<br><span class='info'>No messages yet</span><br><br>";
+
+  echo "<br><a class='eraseBtn' data-role='button'
+        href='messages.php?view=$view'>Refresh messages</a></div></div>";
+
+?>
+
+    </div><br>
+  </body>
+</html>
+
+
+
+
+
+
+/* Messages */
+.messagesContain {
+  position: absolute;
+  margin-top: 10vh;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: auto;
+  font-size: 1.5em;
+}
+
+.messagesContain h3 {
+  font-size: 2em;
+  text-align: center;
+}
+
+
+
+/*
+.messagesForm { 
+  margin-top: 10vh;
+  text-align: left;
+  text-align: center;
+}
+
+.messagesForm legend {
+  font-weight: bold;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+#publicStyle {
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  height: 8vh;
+  width: 8vw;
+  padding: 0.3vw;
+  border-radius: 0.2vw;
+}
+
+#privateStyle {
+  border: 2px solid #444;
+  height: 8vh;
+  width: 8vw;
+  padding: 0.3vw;
+  border-radius: 0.2vw;
+}
+
+
+.messagesContain textarea {
+  margin-top: 5vh;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: auto;
+  height: 10vh;
+  border-radius: 0.3vw;
+  font-size: 1em;
+}
+
+.postMessageBtn {
+  width: 12vw;
+  height: 6vh;
+  font-size: 1em;
+  background-color: #cacadb;
+  border-radius: 0.7vw;
+}
+
+
+
+.postedMessagesContain {
+  margin-top: 5vh;
+  padding: 1vw;
+  text-align: justify;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px grey solid;
+}
+
+.postedMessagesContain a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.eraseBtn {
+  width: 20vw;
+  height: 10vh;
+  padding: 0.8vw;
+  border-radius: 0.3vw;
+  margin-left: 17vw;
+  margin-right: auto;
+  background-color: blue;
+  color: white !important;
+}
+
+
+*/
+
+
+.messageContainBox {
+  width: 100%;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+}
+
+.sectionName {
+  height: 9.5%;
+  width: 100%;
+  border-top: 1px lightgrey solid;
+  border-bottom: 1px lightgrey solid;
+}
+
+.sectionName p {
+  margin-top: 1vh;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+.recent {
+  display: inline-block;
+  width: 19%;
+  height: 94.5%;
+  float: left;
+  background-color: #f2f5f7;
+  overflow-y: scroll;
+}
+
+.messageMain {
+  display: inline-block;
+  width: 62%;
+  height: 90%;
+  float: center;
+}
+
+.contacts {
+  display: inline-block;
+  width: 19%;
+  height: 94.5%;
+  float: right;
+  background-color: #f2f5f7;
+  overflow-y: scroll;
+}
+
+
+
+
+/* messageMain */
+.content {
+  height: 79.5%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-bottom: 0.5px lightgrey solid;
+  border-left: 0.5px lightgrey solid;
+  border-left: 0.5px lightgrey solid;
+  overflow-y: scroll;
+ }
+ 
+ .content::-webkit-scrollbar {
+   width: 0.5em;
+ }
+ 
+ .content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+ .content::-webkit-scrollbar-thumb {
+   background-color: darkgrey;
+   outline: 1px solid slategrey;
+    border-radius: 0.8vw;
+}
+ 
+ .message {
+   border-radius: 1.4vw;
+   padding: 0.5vh;
+   max-width: 40%;
+ }
+ 
+ 
+ .Me {
+   float:right;
+   margin-right: 2vw;
+   background-color: lightgrey;
+ }
+ 
+ .Else {
+   float: left;
+   margin-left: 2vw;
+   background-color: lightgrey;
+ }
+ 
+ .message p {
+   margin: 0.8vh;
+   font-size: 0.8em;
+ }
+ 
+ 
+
+ .type {
+  height: 10%;  
+  border-bottom: 0.5px lightgrey solid;
+ }
+ 
+ .postMessageText {
+  display: inline-block;
+   width: 84%;
+   margin-left: 2.5%;
+   margin-right: auto;
+   margin-top: 1vh;
+   border-radius: 0.7vw;
+   border: 0.7px solid lightgrey;
+   padding-left: 1vw;
+   padding-top: 1vh;
+   padding-bottom: 1vh;
+   padding-right: 6vh;
+   position: relative;
+   z-index: 1;
+ }
+
+ .postMessageBtn {
+  display: inline-block;
+  width: 8.5%;
+  text-align: center;
+  padding-top: 0.8vh;
+  padding-bottom: 0.8vh;
+  margin-top: 1vh;
+  margin-left: -7.4vh;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  border: 0px;
+}
+
+.postMessageBtn:hover {
+  background-color: #a3cdff;
+  color: white;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Recent */
+ .user {
+   width: 90%;
+   padding-top: 1vh;
+   padding-bottom: 1vh;
+   padding-left: 2vh;
+   border-bottom: lightgrey;
+   margin-bottom: 0.5vh;
+   background-color: white;
+ }
+ 
+ .user p {
+   margin: 0px;
+ }
+ 
+ .recent::-webkit-scrollbar {
+   width: 5%;
+ }
+ 
+ .recent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+ .recent::-webkit-scrollbar-thumb {
+   background-color: darkgrey;
+   outline: 1px solid slategrey;
+    border-radius: 0.8vw;
+}
+
+
+
+
+
+/*Contacts*/
+.contacts::-webkit-scrollbar {
+   width: 5%;
+ }
+ 
+ .contacts::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+ .contacts::-webkit-scrollbar-thumb {
+   background-color: darkgrey;
+   outline: 1px solid slategrey;
+    border-radius: 0.8vw;
+}

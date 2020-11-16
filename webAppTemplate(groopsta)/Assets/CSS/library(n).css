@@ -1,0 +1,155 @@
+@import "navbar.css";
+@import "footer.css";
+
+html {
+	height: 100%;
+}
+
+body {
+	text-align: center;
+	font-family: Roboto, Arial;
+	background-color: white;
+	color: black;
+	margin: 0px;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+.bossContainer {
+	margin-left: 12vw;
+	margin-right: 12vw;
+	width: 76vw;
+	background-color: lightgrey;
+}
+
+.individualEmbed {
+	width: 25vw;
+  	display: inline-block;
+  	margin: 0px;
+}
+
+.individualEmbed iframe {
+	height: 100vh;
+	width: 25vw;
+}
+
+
+
+.MyLibrary {
+	margin: auto;
+	margin-bottom: 7vh;
+	width: 40vw;
+	font-size: 5em;
+	padding-top: 10vh;
+
+}
+
+
+.LibraryNum {
+	font-size: 3em;
+	margin-top: 5vh;
+	margin-bottom: 3vh;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 1025px) {
+
+
+.MyLibrary {
+	text-align: center;
+	width: 30vw;
+	margin-left: 20vw;
+	margin-bottom: 7vh;
+	font-size: 5em;
+
+}
+
+
+.LibraryNum {
+	font-size: 3em;
+	text-align: center;
+	margin-top: 5vh;
+	margin-bottom: 3vh;
+	margin-left: 8vw;
+
+}
+
+
+.bossContainer {
+	width: 100vw;
+	background-color: lightgrey;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+}
+
+.individualEmbed {
+	width: 100vw;
+  	margin-top: 5vh;
+  	height: 50vh;
+}
+
+
+.individualEmbed iframe {
+	height: 50vh;
+	width: 100vw;
+}
+
+}
+
+
+
+
+
+blockquote.twitter-tweet {
+  float: center;
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 16px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin: 10px 5px;
+  padding: 0 16px 16px 16px;
+}
+
+blockquote.twitter-tweet p {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+blockquote.twitter-tweet a {
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  outline: 0 none;
+}
+
+blockquote.twitter-tweet a:hover,
+blockquote.twitter-tweet a:focus {
+  text-decoration: underline;
+}
+
+
+
+

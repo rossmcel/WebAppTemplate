@@ -1,0 +1,306 @@
+
+/* Libraries */
+
+.libraryContainer {
+  position: absolute;
+  margin-top: 10vh;
+  width: 100%;
+  height: 90vh;
+  background-color: #dadae0;
+}
+
+.libraryContainer header {
+  margin-top: -7vh;
+  background-color: #dadae0;
+  height: 8vh;
+  padding-top: 1vh;
+}
+
+.libraryContainer header h1 {
+  text-align: center;
+  color: black;
+}
+
+.noLibraries {
+  text-align: center;
+}
+
+
+
+.librariesN {
+  display: inline-block;
+  float: left;
+  margin-top: 10vh;
+  width: 30%;
+  height: 70vh;
+  margin-left: 25%;
+  border: 1px grey solid;
+  overflow-y: scroll;
+  background-color: grey;
+}
+
+.librariesN::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+.librariesN::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.librariesN::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
+.librariesN h3 {
+  text-align: center;
+  color: white;
+  font-size: 1.6em;
+}
+
+.librariesN ul {
+  list-style-type: none;
+  margin-left: -2.5vw;
+}
+
+.librariesN li {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 1px darkgrey solid;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 100%;
+  height: 3vh;
+  background-color: #333;
+  margin-left: 0px;
+}
+
+.librariesN li:hover {
+  background-color: darkgrey;
+}
+
+
+.libraryFormContain {
+  display: inline-block;
+  float: left;
+  margin-top: 10vh;
+  margin-left: 0.5%;
+  margin-right: auto;
+  width: 20%;
+  border: 1px grey solid;
+  background-color: grey;
+  color: white;
+}
+
+.libraryFormContain h2 {
+  text-align: center;
+}
+
+.libraryFormContain input {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.libraryText {
+  height: 4vh;
+  width: 95%;
+  margin-left: 0.75%;
+  padding-left: 0.5vw;
+  font-weight: bold;
+}
+
+.createLibBtn {
+  text-align: center;
+  width: 50%;
+  height: 6vh;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-weight: bold;
+  border-radius: 0.8vw;
+  border: 1px grey solid;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: grey;
+}
+
+.createLibBtn:hover {
+  background-color: darkgrey;
+}
+
+
+
+
+
+
+.libContentFormContain {
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border: 1px grey solid;
+  background-color: grey;
+  color: white;
+}
+
+.libContentFormContain h3 {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.libContentFormContain input {
+  margin-top: 0.8vh;
+  margin-bottom: 0.8vh;
+}
+
+
+
+
+
+
+
+
+
+
+.formDropDown {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-decoration: none;
+}
+
+
+.formDropDownBtn {
+  text-align: center;
+  width: 50%;
+  height: 6vh;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-weight: bold;
+  border: 1px grey solid;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: grey; 
+  border: none;
+  outline: none;
+  color: white;
+  
+}
+
+.formDropDown:hover .formDropDownBtn {
+  background-color: #1c498a; /* blue */
+  color: white;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.libContentFormContainDrop {
+  color: black;
+  display: none;
+  position: relative;
+  z-index: 1;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.3vh;
+  width: 100%;
+  border-radius: 0.3vw;
+  background-color: white;
+}
+
+.libContentFormContainDrop h3 {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.libContentFormContainDrop input {
+  margin-top: 0.8vh;
+  margin-bottom: 0.8vh;
+}
+
+.libContentUrl {
+  height: 4vh;
+  width: 50%;
+  margin-left: 0.75%;
+  margin-right: 8%;
+  padding-left: 0.5vw;
+  font-weight: bold;
+}
+
+
+.formDropDown:hover .libContentFormContainDrop {
+  display: block;
+  text-decoration: none;
+}
+
+
+.addLibContentBtn {
+  text-align: center;
+  width: 30%;
+  height: 6vh;
+  margin-left: 35%;
+  margin-right: 35%;
+  font-weight: bold;
+  border-radius: 0.3vw;
+  border: 0px white solid;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: white;
+}
+
+.addLibContentBtn:hover {
+  background-color: #1c498a; /* blue */
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+.libraryContent {
+  overflow-y: scroll;
+  width: 40%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px white solid;
+  padding: 0px;
+  background-color: white;
+}
+
+.libraryContent::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+.libraryContent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.libraryContent::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.libraryContent h3 {
+  font-size
+}
+
+
+.posts {
+  width: 99%;
+  margin-bottom: 1vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  border: 2px white solid;
+  background-color: black;
+}

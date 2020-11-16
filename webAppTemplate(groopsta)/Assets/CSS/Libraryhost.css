@@ -1,0 +1,65 @@
+body {
+	text-align: center;
+	font-size: 2em;
+	font-family: Roboto, Arial;
+	margin: 0;
+	background-color: white;
+
+}
+
+h1 {
+	font-size: 3em;
+	text-align: center;
+	color: black;
+}
+
+
+.librariesContainer {
+	max-width: 90vw;
+	margin: auto;
+	background-color: blue;
+}
+
+.libraryContainerL {
+	color: white;
+	display: inline-block;
+	max-width: 15vw;
+	min-width: 15vw;
+	max-height: 20vh;
+	min-height: 20vh;
+	float: left;
+}
+
+.libraryContainerC {
+	color: white;
+	display: inline-block;
+	max-width: 15vw;
+	min-width: 15vw;
+	max-height: 20vh;
+	min-height: 20vh;
+	float: center;
+	margin: 0;
+}
+
+.libraryContainerR {
+	color: white;
+	display: inline-block;
+	max-width: 15vw;
+	min-width: 15vw;
+	max-height: 20vh;
+	min-height: 20vh;
+	float: right;
+	margin-left: 10vw;
+}
+
+
+
+box {
+	border: 3px solid black;
+	width: 35vw;
+	height: 35vh;
+	margin: auto;
+}
+
+
+

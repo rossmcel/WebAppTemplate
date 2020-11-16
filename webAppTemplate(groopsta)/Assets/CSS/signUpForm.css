@@ -1,0 +1,38 @@
+<div class="signUpFormStyle">
+		<h3>Sign Up</h3>
+
+		<form name="regForm" action="server-script-url" onsubmit="return( validate() );">
+			
+				<input class="inputBox" type="text" name="firstname" placeholder="First Name"><br><span id="fnameMessage3"></span>
+			
+			
+				<input class="inputBox" type="text" placeholder="Email Address" name="emailAddress"><br><span id="fnameMessage"></span>
+			
+			
+				<input class="inputBox" type="password" placeholder="Password" name="password"><br><span id="fnameMessage2"></span>
+
+				<select name="region">
+					<option value="regionPlaceholder" disabled selected hidden>Your Region</option>
+					<option value="africa">Africa</option>
+					<option value="asia">Asia</option>
+					<option value="europe">Europe</option>
+					<option value="oceania">Oceania</option>
+					<option value="northAmerica">North America</option>
+					<option value="southAmerica">South America</option>
+					<option value="other">Other</option>
+				</select>
+
+				<div class="checkBoxStyle">
+					<input type="radio" name="checkBox" value="agree"><label>The above information is correct</label>
+				</div>
+
+
+				<div class="textBox">
+					<h4>Comments:</h4><br>
+					<textarea name="message" rows="10" cols="30"></textarea>
+				</div>
+
+				<button type="submit">Submit</button>
+			
+		</form>
+</div>

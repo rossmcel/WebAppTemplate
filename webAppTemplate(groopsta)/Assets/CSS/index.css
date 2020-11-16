@@ -1,0 +1,403 @@
+/* index css */
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Not logged in */
+
+
+
+/* Home screen container */
+.homeContain {
+	width: 100%;
+	height: 95%;
+	max-width: 100%;
+	max-height: 95%;
+	margin-bottom: 0px;
+}
+
+
+/* Left Side of non-logged in home screen */
+.leftNotLoggedIn {
+	float: left;
+	display: inline-block;
+	background-color: #a3cdff;
+	width: 40%;
+	height: 100%;
+}
+
+.leftNotLoggedIn img {
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+	border-radius: 2vw;
+}
+
+.leftNotLoggedIn h1 {
+	margin-top: 13%;
+	text-align: center;
+	color: white;
+	font-size: 3.9em;
+}
+
+.leftNotLoggedIn h2 {
+	margin-top: 10%;
+	text-align: center;
+	color: white;
+	font-size: 1.8em;
+}
+
+.homeDescription {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 5%;
+}
+
+.homeDescription h3 {
+	margin-top: 5%;
+	text-align: center;
+	font-size: 1.8em;
+}
+.homeDescription p {
+	list-style-type: none;
+	text-align: justify;
+	color: black;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/* Right Side of non-logged in home screen */
+
+.rightNotLoggedIn {
+	float: right;
+	display: inline-block;
+	width: 60%;
+	height: 100%;
+}
+
+
+
+
+/* home login */
+.indexLogin {
+	width: 85%;
+	height: 5%;
+	margin-top: 15%;
+	margin-bottom: 10%;
+	margin-left: 7.5%;
+}
+
+.indexLogin h3 {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+.indexLogin form {
+	margin-bottom: 0px;
+	height: 100%;
+}
+
+.homeOR {
+	width: 82%;
+	text-align: center;
+}
+
+
+/* home signup */
+
+.indexSignUp {
+	width: 85%;
+	height: 5%;
+	margin-top: 10vh;
+	margin-bottom: 25%;
+	margin-left: 7.5%;
+}
+
+.indexSignUp h3 {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+.indexSignUp form {
+	margin-bottom: 0px;
+	height: 100%;
+}
+
+
+
+/* Home login and sign up */
+.textInputs {
+	display: inline-block;
+	width: 82%;
+	height: 100%;
+	margin-right: 3%;
+}
+
+.textInputs input {
+	width: 45%;
+	height: 100%;
+	background-color: white;
+	border: 0.2px #a3cdff solid;
+	padding-left: 2%;
+}
+
+
+.signInBtnHome {
+	display: inline-block;
+	float: right;	
+	width: 15%;
+	height: 100%;
+}
+
+.signInBtnHome input {
+	min-height: 100%;
+	width: 100%;
+	border: 0px;
+	border: 0.2px #a3cdff solid;
+	border-radius: 2vw;
+	background-color: #edf1f5; /* very very light grey */
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.signInBtnHome input:hover {
+	background-color: #a3cdff;
+}
+
+
+
+/* Home search */
+
+.homeSearch {
+	width: 50%;
+	height: 13%;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.homeSearch h2 {
+	text-align: center;
+	font-size: 2.3em;
+}
+
+.homeSearch form {
+	width: 100%;
+	height: 100%;
+}
+
+.homeSearchText {
+	height: 40%;
+	width: 94%;
+	border: 2px #a3cdff solid;
+	border-radius: 2vw;
+	padding-left: 4%;
+}
+
+.homeSearchBtn {
+	height: 45%;
+	width: 30%;
+	margin-top: 5%; 
+	margin-left: 35%;
+	border: 0.2px #a3cdff solid;
+	border-radius: 2vw;
+	background-color: #edf1f5;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.homeSearchBtn:hover {
+	background-color: #a3cdff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* Logged in */
+
+
+
+
+/* Container */
+.loggedInHomeContain {
+	position: absolute;
+	margin-top: 10vh;
+	width: 100%;
+}
+
+
+
+
+/*-------------------------------*/
+.recentTopics {
+	display: inline-block;
+	width: 25%;
+	height: 40vh;
+	float: left;
+	margin-left: 4.5%;
+	/*background-color: lightgreen*/
+	text-align: center;
+	border-right: 1px lightgrey solid;
+}
+
+
+.recentTopics h3 {
+	color: white;
+}
+
+
+.recentView {
+	border-top: 0.5px #a3cdff solid;
+	border-bottom: : 0.5px #a3cdff solid;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	margin-top: 0.5vh;
+}
+
+.recentView h3 {
+	margin: 1.5vh;
+	color: black;
+}
+
+
+
+/*-------------------------------*/
+.trending {
+	display: inline-block;
+	width: 40%;
+	height: 80vh;
+	float: center;
+	/*background-color: #ebf2ff;*/
+	text-align: center;
+	overflow-y: scroll;
+}
+
+.trending::-webkit-scrollbar {
+   width: 1%;
+ }
+ 
+.trending::-webkit-scrollbar-track {
+  background-color: white;
+}
+ 
+.trending::-webkit-scrollbar-thumb {
+   background-color: darkgrey;
+   outline: 1px solid slategrey;
+    border-radius: 0.8vw;
+}
+
+.test {
+	height: 100vh;
+}
+
+
+
+
+/*-------------------------------*/
+.searchTopics {
+	display: inline-block;
+	width: 25%;
+	height: 50vh;
+	float: right;
+	margin-right: 4.5%;
+	/*background-color: lightblue;*/
+	text-align: center;
+	border-left: 1px lightgrey solid;
+}
+
+
+.homeSearchTopic {
+	width: 100%;
+	height: 13%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.homeSearchTopic h2 {
+	text-align: center;
+	font-size: 2.3em;
+}
+
+.homeSearchTopic form {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+}
+
+.homeSearchTextTopic {
+	height: 50%;
+	width: 55%;
+	border: 2px #a3cdff solid;
+	border-radius: 2vw;
+	padding-left: 1vh;
+}
+
+/* The style rules for the non-logged in search function are predominantly used here */
+.inLogHomeSearchBtn {
+	margin-top: 0.2vh;
+	height: 45%;
+	border: 0.2px #a3cdff solid;
+	border-radius: 2vw;
+	background-color: #edf1f5;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.inLogHomeSearchBtn:hover {
+	background-color: #a3cdff;
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------*/
+/* footer */
+footer {
+	width: 100%;
+	height: 5%;
+	margin-top: 0px;
+	background-color: white;
+	border-top: 1px lightgrey solid;
+}
+
+footer h3 {
+	margin-top: 3vh;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
